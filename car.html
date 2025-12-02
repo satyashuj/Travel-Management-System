@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Booking Service</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>🚕 Car Booking</h2>
+    <a class="back-btn" href="../index.html">⬅ Back</a>
+</header>
+
+<div class="box">
+    <form id="car-form">
+        <label>Guest Name</label>
+        <input type="text" id="car-guest" required>
+
+        <label>Select Car</label>
+        <select id="car-type">
+            <option value="Sedan - 1500">Sedan - ₹1500</option>
+            <option value="SUV - 2500">SUV - ₹2500</option>
+            <option value="Luxury - 4000">Luxury - ₹4000</option>
+        </select>
+
+        <label>Pickup Location</label>
+        <input type="text" id="pickup">
+
+        <label>Date / Time</label>
+        <input type="datetime-local" id="car-date">
+
+        <button type="submit">Book Car</button>
+    </form>
+
+    <h3>Recent Car Bookings</h3>
+    <table>
+        <thead>
+            <tr><th>Guest</th><th>Car</th><th>Price</th><th>Time</th></tr>
+        </thead>
+        <tbody id="car-table"></tbody>
+    </table>
+</div>
+
+<script src="car.js"></script>
+</body>
+</html>

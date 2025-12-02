@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel & Tourism - Hotel Management</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>🗺️ Travel & Tourism</h2>
+    <a href="../index.html" class="back-btn">⬅ Back to Dashboard</a>
+</header>
+
+<div class="container">
+
+    <div class="form-card">
+        <h3>Book a Tour Package</h3>
+        <form id="tour-form">
+            <label>Guest Name</label>
+            <input type="text" id="tour-guest" required>
+
+            <label>Select Package</label>
+            <select id="tour-package">
+                <option value="City Tour - 1500">City Tour - ₹1500</option>
+                <option value="Religious Tour - 2000">Religious Tour - ₹2000</option>
+                <option value="Adventure Tour - 3500">Adventure Tour - ₹3500</option>
+                <option value="Luxury Tour - 5000">Luxury Tour - ₹5000</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" id="tour-date" required>
+
+            <button type="submit">Book Package</button>
+        </form>
+    </div>
+
+    <div class="table-card">
+        <h3>Tour Bookings</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Guest</th>
+                    <th>Package</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="tour-table-body">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="travel.js"></script>
+</body>
+</html>

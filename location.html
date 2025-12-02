@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hotel Location Selection</title>
+<link rel="stylesheet" href="location.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>🌍 Choose Hotel Location</h2>
+    <a href="../index.html" class="back-btn">⬅ Dashboard</a>
+</header>
+
+<div class="box">
+
+    <form id="location-form">
+
+        <label>Country</label>
+        <select id="country-select" required>
+            <option value="">--Select Country--</option>
+        </select>
+
+        <label>State / Province</label>
+        <select id="state-select" required>
+            <option value="">--Select State--</option>
+        </select>
+
+        <label>City</label>
+        <select id="city-select" required>
+            <option value="">--Select City--</option>
+        </select>
+
+        <label>Area / Branch</label>
+        <select id="branch-select" required>
+            <option value="">--Select Branch--</option>
+        </select>
+
+        <h3>Fill Customer Details</h3>
+
+        <label>Customer Name</label>
+        <input type="text" id="cust-name" required>
+
+        <label>Phone Number</label>
+        <input type="text" id="cust-phone" required>
+
+        <button type="submit">Confirm Location</button>
+    </form>
+
+</div>
+
+<script src="location.js"></script>
+</body>
+</html>
